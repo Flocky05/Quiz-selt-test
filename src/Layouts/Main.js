@@ -2,6 +2,7 @@ import React from 'react';
 import './Main.css';
 import { Outlet, useLoaderData } from 'react-router-dom';
 import Header from '../Components/Header/Header';
+import Quizs from '../Components/Quizs/Quizs';
 
 const Main = () => {
     const quizs = useLoaderData();
@@ -9,7 +10,7 @@ const Main = () => {
         <div >
             <Header></Header>
             <Outlet></Outlet>
-            <h2> quiz number:{quizs.data.length}</h2>
+            <Quizs quizs={quizs.data}></Quizs>
 
         </div>
     );
