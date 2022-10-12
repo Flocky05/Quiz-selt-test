@@ -6,7 +6,10 @@ const Header = () => {
         <div>
             <div className="navbar bg-slate-200 drop-shadow-lg">
                 <div className="flex-1">
-                    <a href='/' className="btn btn-ghost normal-case text-xl">SELF-TEST</a>
+                    <div>
+
+                        <a href='/' className="btn btn-ghost normal-case text-xl"> <img className='w-10 h-10 m-2' src={require('../../images/favicon.png')} alt="" />SELF {' '}<span className='text-yellow-400 pl-2'>TEST</span></a>
+                    </div>
                 </div>
                 <div className="flex-none">
                     <ul className="menu menu-horizontal p-0">

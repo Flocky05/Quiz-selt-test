@@ -3,7 +3,7 @@ import { BeakerIcon, EyeIcon, EyeSlashIcon } from '@heroicons/react/24/solid'
 import Option from '../Option/Option';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { current } from 'daisyui/src/colors';
+
 
 
 const Questions = ({ qs, indx, handleAns }) => {
