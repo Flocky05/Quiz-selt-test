@@ -8,9 +8,13 @@ const Topic = () => {
     const topic = useLoaderData().data;
     const handleAns = (option, correctAnswer) => {
         if (option === correctAnswer) {
-            toast.success("Correct");
+            toast.success("Correct", {
+                position: 'top-center'
+            });
         } else {
-            toast.warning("Wrong");
+            toast.warning("Wrong", {
+                position: 'top-center'
+            });
         }
     }
     return (
@@ -24,7 +28,6 @@ const Topic = () => {
                     handleAns={handleAns}
                 ></Questions>)
             }
-            <ToastContainer></ToastContainer>
         </div>
     );
 };

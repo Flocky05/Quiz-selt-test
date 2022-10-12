@@ -25,7 +25,7 @@ const Questions = ({ qs, indx, handleAns }) => {
             {
                 show && <h2 className='text-2xl font-semibold text-green-400'>{qs.correctAnswer}</h2>
             }
-            <ToastContainer></ToastContainer>
+
         </div>
     );
 
