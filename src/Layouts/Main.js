@@ -10,7 +10,7 @@ const Main = () => {
         <div >
             <Header></Header>
             <Outlet></Outlet>
-            <Quizs quizs={quizs.data}></Quizs>
+
 
         </div>
     );

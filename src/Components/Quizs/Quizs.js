@@ -8,7 +8,8 @@ const Quizs = ({ quizs }) => {
         <div className='grid grid-cols-4 gap-10 p-20'>
             {
                 quizs.map(quiz => <Card
-                    quiz={quiz}></Card>)
+                    quiz={quiz}
+                    key={quizs.id}></Card>)
             }
         </div>
     );
